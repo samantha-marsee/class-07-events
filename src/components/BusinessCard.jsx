@@ -1,9 +1,6 @@
 export default function BusinessCard(
   { name, email, logo = undefined }
 ) {
-function flipCard(){
-  alert("Ezra Cornell co-founded Cornell University in 1865.")
-}
 
   return (
     <div className="business-card">
@@ -16,7 +13,7 @@ function flipCard(){
         <p>{email}</p>
       </div>
 
-      <button onClick= {flipCard}>
+      <button onClick= {() => alert("Ezra Cornell co-founded Cornell University in 1865.")}>
         More
       </button>
     </div>
